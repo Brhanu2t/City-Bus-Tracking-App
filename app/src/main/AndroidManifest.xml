@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bustracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BusTracker">
+        <activity
+            android:name=".BusInfoUpdation"
+            android:parentActivityName=".Adminstrator"/>
+        <activity
+            android:name=".BusLocation"
+            android:parentActivityName=".Adminstrator"/>
+        <activity
+            android:name=".BusInformation"
+            android:parentActivityName=".Adminstrator"/>
+        <activity
+            android:name=".BusRegistration"
+            android:parentActivityName=".Adminstrator"/>
+        <activity
+            android:name=".UserIF"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Adminstrator"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
